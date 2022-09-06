@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <title>My First JavaScript</title>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    <script>
+        function myFunction(){
+            document.getElementById("f").innerHTML="Password changed.";
+        }
+    </script>
+</script>
+
+    <script src="myscript1.js"></script>        
+    </head>
+    <body id="g">
+        <h1>My first Javascript</h1>
+        <button type="button" onclick="myf()" class="a">Click Here to Change background</button>
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display date</button>
+        <p id="demo"></p>
+        <p id="a">Javascript can change HTML contents</p>
+        <button type="button" onclick='document.getElementById("a").innerHTML = "Hello Javascript!"'>Click me</button><br><br>
+        <button type="button" onclick="document.getElementById('b').src = 'pic_bulbon.gif'">Turn Bulb On</button>
+        <img src="pic_bulboff.gif" alt="" id="b">
+        <button type="button" onclick="document.getElementById('b').src = 'pic_bulboff.gif'">Turn Bulb Off</button><br><br>
+        <p id="c">JavaScript can change the style of an HTML element.</p>
+        <button type="button" onclick="document.getElementById('c').style.fontSize = '35px'">Change style</button>
+
+        <p id="d">JavaScript can hide HTML element</p>
+        <button type="button" onclick="document.getElementById('d').style.display='none'">Hide element</button><br>
+        <p>JavaScript can show HTML hidden element</p>
+        <p id="e" style="display: none;">Hello JavaScript!</p>
+        <button type="button" onclick="document.getElementById('e').style.display='block'">Check Hidden Element</button>
+
+        <p id="f">Hello JavaScript</p>
+        <button type="button" onclick="myFunction()">Try it</button><br>
+       
+       
+       <p id="demo1"></p>
+       <script>
+        var x, y, z;
+        x = 5;
+        y = 6;
+        z = x + y;
+        document.getElementById("demo1").innerHTML = z;
+       </script>
+
+       <p id="demo2"></p>
+       <script>
+        var pi = 3.14;
+        person = "John Doe";
+        answer = "Yes I am!";
+        document.getElementById("demo2").innerHTML = pi + "<br>" + person + "<br>" + answer
+       </script>
+
+    </body>
+</html>
